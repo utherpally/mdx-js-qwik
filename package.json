@@ -1,6 +1,6 @@
 {
   "name": "mdx-js-qwik",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MDX custom components with Qwik backend",
   "author": "langbamit",
   "repository": {
