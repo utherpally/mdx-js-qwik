@@ -2,6 +2,16 @@
   "name": "mdx-js-qwik",
   "version": "0.1.0",
   "description": "MDX custom components with Qwik backend",
+  "author": "langbamit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langbamit/mdx-js-qwik.git"
+  },
+  "bugs": {
+    "url": "https://github.com/langbamit/mdx-js-qwik/issues"
+  },
+  "homepage": "https://github.com/langbamit/mdx-js-qwik/tree/main/#readme",
+  "keywords": ["qwik", "qwik-city", "mdx", "mdxjs"],
   "license": "MIT",
   "type": "module",
   "main": "./lib/inde.mjs",
@@ -31,7 +41,7 @@
   "scripts": {
     "build": "yarn build.types && qwik build",
     "build.lib": "vite build --mode lib",
-    "build.types": "tsc -P tsconfig.lib.json",
+    "build.types": "tsc -P tsconfig.lib.json --pretty",
     "dev": "vite --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
     "fmt": "prettier --write .",
