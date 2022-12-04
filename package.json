@@ -1,0 +1,70 @@
+{
+  "name": "mdx-js-qwik",
+  "version": "0.1.0",
+  "description": "MDX custom components with Qwik backend",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/inde.mjs",
+  "qwik": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.cjs",
+      "types": "./lib/index.d.ts"
+    },
+    "./plugins": {
+      "import": "./lib/recma-jsx-rewrite-qwik.mjs",
+      "require": "./lib/recma-jsx-rewrite-qwik.cjs",
+      "types": "./lib/recma-jsx-rewrite-qwik.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "plugins"
+  ],
+  "engines": {
+    "node": ">=15.0.0"
+  },
+  "private": false,
+  "scripts": {
+    "build": "yarn build.types && qwik build",
+    "build.lib": "vite build --mode lib",
+    "build.types": "tsc -P tsconfig.lib.json",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check .",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "release": "np",
+    "start": "vite --open --mode ssr",
+    "qwik": "qwik",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "0.14.0",
+    "@types/eslint": "8.4.10",
+    "@types/node": "latest",
+    "@typescript-eslint/eslint-plugin": "5.43.0",
+    "@typescript-eslint/parser": "5.43.0",
+    "eslint": "8.28.0",
+    "eslint-plugin-qwik": "latest",
+    "node-fetch": "3.3.0",
+    "np": "7.6.1",
+    "prettier": "2.7.1",
+    "typescript": "4.9.3",
+    "vite": "3.2.4",
+    "@mdx-js/mdx": "^2.1.5"
+  },
+  "peerDependencies": {
+    "@builder.io/qwik": "^0.14.0"
+  },
+  "dependencies": {
+    "@types/mdx": "^2.0.3",
+    "@types/estree-jsx": "^1.0.0",
+    "unified": "^10.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "emitDeclarationOnly": true
+  },
+  "exclude": ["src/root.tsx", "src/entry.dev.tsx", "src/entry.ssr.tsx"]
+}

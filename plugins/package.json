@@ -1,0 +1,15 @@
+{
+  "private": false,
+  "type": "module",
+  "name": "mdx-js-qwik/plugins",
+  "main": "../lib/recma-jsx-rewrite-qwik.cjs",
+  "module": "../lib/recma-jsx-rewrite-qwik.mjs",
+  "types": "../lib/recma-jsx-rewrite-qwik.d.ts",
+  "exports": {
+    ".": {
+      "import": "../lib/recma-jsx-rewrite-qwik.mjs",
+      "require": "../lib/recma-jsx-rewrite-qwik.cjs",
+      "types": "../lib/recma-jsx-rewrite-qwik.d.ts"
+    }
+  }
+}
