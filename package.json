@@ -1,6 +1,6 @@
 {
   "name": "mdx-js-qwik",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MDX custom components with Qwik backend",
   "author": "langbamit",
   "repository": {
@@ -11,7 +11,12 @@
     "url": "https://github.com/langbamit/mdx-js-qwik/issues"
   },
   "homepage": "https://github.com/langbamit/mdx-js-qwik/tree/main/#readme",
-  "keywords": ["qwik", "qwik-city", "mdx", "mdxjs"],
+  "keywords": [
+    "qwik",
+    "qwik-city",
+    "mdx",
+    "mdxjs"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "./lib/inde.mjs",
@@ -55,22 +60,22 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@builder.io/qwik": "0.14.0",
+    "@builder.io/qwik": "0.15.2",
     "@types/eslint": "8.4.10",
     "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "5.43.0",
     "@typescript-eslint/parser": "5.43.0",
     "eslint": "8.28.0",
-    "eslint-plugin-qwik": "latest",
+    "eslint-plugin-qwik": "0.15.2",
     "node-fetch": "3.3.0",
     "np": "7.6.1",
     "prettier": "2.7.1",
     "typescript": "4.9.3",
-    "vite": "3.2.4",
+    "vite": "^4.0.1",
     "@mdx-js/mdx": "^2.1.5"
   },
   "peerDependencies": {
-    "@builder.io/qwik": "^0.14.0"
+    "@builder.io/qwik": "^0.14.0 || ^0.15.0"
   },
   "dependencies": {
     "@types/mdx": "^2.0.3",
